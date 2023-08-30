@@ -6,6 +6,8 @@
 @import "./homeLeft.css";
 @import "./homeRight.css";
 @import "./Mockup.css";
+@import "./testimonials.css";
+@import "./FAQs.css";
 /* Import Poppins font family from Google Fonts */
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 

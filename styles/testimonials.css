@@ -1,0 +1,45 @@
+.testimonials_page{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 57px 120px;
+
+    /* width: 100%; */
+    /* height: 516px; */
+    /* background-color: #90FCBD; */
+}
+
+.testimonial_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 2.5rem;
+
+    min-height: 470px;
+    width: 316px;
+
+    border-radius: 20px;
+    
+    /* background-color: #90FCBD; */
+    color: #000000;
+}
+
+.quotation_mark{
+
+}
+
+.testimonial{
+    margin-bottom: auto;
+    
+    font-size: 1.3rem;
+}
+
+.testimonial_card > span p{
+    line-height: 25px;
+}
+
+.testimonial_card > span p:first-child{
+    font-weight: 700;
+}
