@@ -29,6 +29,7 @@
     justify-content: space-between;
     align-items: center;
     color: white;
+    cursor: pointer;
     /* border: 1px solid white; */
 }
 

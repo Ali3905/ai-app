@@ -39,9 +39,9 @@ const FAQs = () => {
       <div className="faqs_section">
         {data.map((ele, i) => {
           return <div className="faqs_item" key={i}>
-            <span>
+            <span onClick={()=>handleCollapse(i)} >
             <p className="question">{ele.question}</p>
-            <svg onClick={()=>handleCollapse(i)} className={active === i ?"rotate_180": ""} xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 10 6" fill="none">
+            <svg className={active === i ?"rotate_180": ""} xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 10 6" fill="none">
                 <path d="M1 1.16667L4.66667 4.83333L8.33333 1.16667" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
             </span>
