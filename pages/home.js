@@ -1,5 +1,6 @@
 import React from 'react'
 import HomeLeft from './components/Home/homeLeft'
+import HomeLeftSm from './components/Home/homeLeftSm'
 import HomeRight from './components/Home/homeRight'
 import MockupSection from './components/Home/MockupSection'
 
@@ -14,8 +15,9 @@ const home = () => {
       <HomeLeft />
       <HomeRight />
     </div>
+    <HomeLeftSm />
     <MockupSection />
-    <div 
+    {/* <div 
     style={{
       backgroundColor : 'black',
       width : "100%",
@@ -23,7 +25,7 @@ const home = () => {
     }}
     >
 
-    </div>
+    </div> */}
     </>
   )
 }

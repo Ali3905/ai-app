@@ -41,3 +41,11 @@
 .rotate_180{
     transform: rotate(180deg);
 }
+
+
+@media (max-width: 768px){
+    .faqs_page{
+        padding: 57px 40px;
+    }
+    
+}
