@@ -189,8 +189,11 @@ div::after
     border-radius: 20px;
 }
 
+.bg{
+    display: none;
+}
 
-@media (max-width: 768px){
+@media (max-width: 1024px){
     .homeleft{
         display: none;
         background-color: unset;
@@ -201,6 +204,7 @@ div::after
     }
 
     .bg{
+        display: block;
         width: 100%;
         height: 100vh;
     }
@@ -274,10 +278,23 @@ div::after
         display: flex;
         align-items: start;
         justify-content: start;
+        position: relative;
     }
 
     .vid_div video{
         max-width: 80%;
         border-radius: 20px;
+    }
+
+
+    .vid_div img{
+        background-color: #fff;
+        border-radius: 100%;
+        width: 60px;
+        height: 60px;
+        padding: 5px 10px;
+        position: absolute;
+        top: 30%;
+        left: 70%;
     }
 }
