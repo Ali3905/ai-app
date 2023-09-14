@@ -32,9 +32,11 @@
    }
 
 
-   .Navbar_Sm > ul li:nth-child(2){
+   .Navbar_Sm > ul li:nth-child(2),
+   li:nth-child(3)
+   {
     background-color: rgb(182, 182, 182);
-    padding: 3px 10px;
+    padding: 5px 12px;
     border-radius: 20px;
    }
 
