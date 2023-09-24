@@ -1,6 +1,7 @@
 
 
 import React, { useState } from "react";
+import Button from "./Button";
 
 const NavbarSm = ({showMenu, hideMenu}) => {
   const hideShowMenu = () => {
@@ -12,11 +13,10 @@ const NavbarSm = ({showMenu, hideMenu}) => {
       <ul>
         <li>Logo</li>
         <li>
-          {/* <svg><use href="/img/sprite.svg#plus"></use></svg> */}
-          Create Art
+          <Button value={"Create Art"} />
         </li>
         <li>
-        Edit Art
+          <Button value={"Edit Art"} />
         </li>
         {!showMenu?<li className="three_dots" onClick={hideShowMenu}>
           <span></span>
