@@ -1,0 +1,62 @@
+.button {
+    line-height: 1;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: .75rem;
+    background-color: var(--clr);
+    color: #212121;
+    border-radius: 10rem;
+    font-weight: 500;
+    padding: .75rem .5rem;
+    padding-left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: background-color .3s;
+  }
+
+  .button__icon-wrapper {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    color: var(--clr);
+    background-color: #212121;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+  }
+
+  .button:hover {
+    background-color: #fff;
+  }
+
+  .button:hover .button__icon-wrapper {
+    color: #fff;
+  }
+
+  .button__icon-svg--copy {
+    position: absolute;
+    transform: translate(-150%, 150%);
+  }
+
+  .button:hover .button__icon-svg:first-child {
+    transition: transform .3s ease-in-out;
+    transform: translate(150%, -150%);
+  }
+
+  .button:hover .button__icon-svg--copy {
+    transition: transform .3s ease-in-out .1s;
+    transform: translate(0);
+  }
+
+  .communityedits {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .background {
+    background-color: #212121;
+    border-radius: 2rem;
+  }

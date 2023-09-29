@@ -4,7 +4,8 @@ import React, { useEffect, useRef, useState } from 'react'
 import NavbarSm from '../NavbarSm'
 import Menu from './Menu'
 import Script from 'next/script'
-import Button from '../Button'
+import Button from '../NavButton'
+import Btn from '../Btn'
 
 const homeLeftSm = () => {
   const [showMenu, setShowMenu] = useState(false)
@@ -55,20 +56,30 @@ const homeLeftSm = () => {
       </h2>
       <div className='scroll'>
         <p className='arrow'>
-        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 17.25L12 21m0 0l-3.75-3.75M12 21V3" />
+        </svg>
+
         </p>
-        <div className='scroll_right'>
+        <div className='scroll_right '>
             {/* <p>explore collection</p> */}
-           <Button value={"explore collections"} />
+           <Btn value={"explore collections"} />
             <p></p>
-           <Button value={"Community"} />
+           <Btn value={"Community"} />
             {/* <p>Community</p> */}
         </div>
       </div>
       <div className='vid_div'>
       <video src="/3D.mp4" ref={vidRef} setPlay={!play?true:false}></video>
       {/* <button> */}
-      {!play?<img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/play--v1.png" alt="play--v1" onClick={handlePlayVideo}/>: <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/pause--v1.png" alt="pause--v1" onClick={handlePauseVideo}/>}
+      {!play?<svg xmlns="http://www.w3.org/2000/svg" onClick={handlePauseVideo} viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+  <path fillRule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clipRule="evenodd" />
+</svg>
+
+: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" onClick={handlePauseVideo} fill="currentColor" className="w-6 h-6">
+<path fillRule="evenodd" d="M6.75 5.25a.75.75 0 01.75-.75H9a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H7.5a.75.75 0 01-.75-.75V5.25zm7.5 0A.75.75 0 0115 4.5h1.5a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H15a.75.75 0 01-.75-.75V5.25z" clipRule="evenodd" />
+</svg>
+}
       {/* </button> */}
       {/* <div></div> */}
 

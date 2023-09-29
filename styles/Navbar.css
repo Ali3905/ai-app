@@ -14,12 +14,12 @@
 
 @media (max-width: 1024px){
     nav{
-        margin: 0 0 50px 0 !important;
+        margin: 0 !important;
     }
 
     .Navbar_Sm{
         display: flex;
-        margin-bottom: 50px;
+        /* margin-bottom: 50px; */
         /* padding: 20px; */
     }
 

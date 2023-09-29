@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Button = ({value}) => {
+const NavButton = ({value}) => {
   return (
     <button class="btn" type="button">
     <strong>{value}</strong>
@@ -16,4 +16,4 @@ const Button = ({value}) => {
   )
 }
 
-export default Button
+export default NavButton
